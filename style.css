@@ -1,0 +1,104 @@
+/* style.css */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #f8f9fa, #dbeafe);
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  .container {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+    text-align: center;
+    width: 320px;
+    transition: transform 0.3s;
+  }
+  
+  .container:hover {
+    transform: scale(1.01);
+  }
+  
+  h1 {
+    color: #1d4ed8;
+    margin-bottom: 1rem;
+  }
+  
+  #display {
+    font-size: 2.2rem;
+    margin: 1rem 0;
+    color: #111827;
+    background-color: #e0f2fe;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+  
+  .buttons button {
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .buttons button:nth-child(1) {
+    background-color: #10b981; /* Start - Green */
+    color: white;
+  }
+  
+  .buttons button:nth-child(1):hover {
+    background-color: #059669;
+  }
+  
+  .buttons button:nth-child(2) {
+    background-color: #f59e0b; /* Pause - Yellow */
+    color: white;
+  }
+  
+  .buttons button:nth-child(2):hover {
+    background-color: #d97706;
+  }
+  
+  .buttons button:nth-child(3) {
+    background-color: #ef4444; /* Reset - Red */
+    color: white;
+  }
+  
+  .buttons button:nth-child(3):hover {
+    background-color: #dc2626;
+  }
+  
+  .buttons button:nth-child(4) {
+    background-color: #3b82f6; /* Lap - Blue */
+    color: white;
+  }
+  
+  .buttons button:nth-child(4):hover {
+    background-color: #2563eb;
+  }
+  
+  #laps {
+    margin-top: 1rem;
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-height: 150px;
+    overflow-y: auto;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  #laps li {
+    font-size: 0.9rem;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 0.3rem 0;
+    color: #1e3a8a;
+  }
+  
